@@ -1,0 +1,145 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Digicyfr Service Menu 0.1.0\n"
+"Language: pl_PL\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+msgid "A service needs a name before it can be published. It was saved as a draft."
+msgstr "Usługa wymaga nazwy przed publikacją. Zapisano ją jako szkic."
+
+msgid "Add service"
+msgstr "Dodaj usługę"
+
+msgid "Add service category"
+msgstr "Dodaj kategorię usługi"
+
+msgid "All service categories"
+msgstr "Wszystkie kategorie usług"
+
+msgid "Archive"
+msgstr "Archiwizuj"
+
+msgid "Archive service"
+msgstr "Archiwizuj usługę"
+
+msgid "Archive service?"
+msgstr "Archiwizować usługę?"
+
+msgid "Archiving changes this published service to a draft. You can publish it again later."
+msgstr "Archiwizacja zmieni opublikowaną usługę w szkic. Możesz ją później opublikować ponownie."
+
+msgid "Cancel"
+msgstr "Anuluj"
+
+msgid "Category slug"
+msgstr "Identyfikator kategorii"
+
+msgid "Display published services, optionally filtered by a category slug."
+msgstr "Wyświetl opublikowane usługi, opcjonalnie filtrowane według identyfikatora kategorii."
+
+msgid "Download CSV"
+msgstr "Pobierz CSV"
+
+msgid "Download a UTF-8 CSV of published and draft services for human review. Every cell is quoted; formula-like merchant text is prefixed with an apostrophe. No customer data is included."
+msgstr "Pobierz plik CSV UTF-8 z opublikowanymi usługami i szkicami do ręcznego przeglądu. Każde pole jest w cudzysłowie; tekst podobny do formuły jest poprzedzony apostrofem. Plik nie zawiera danych klientów."
+
+msgid "Duration (text)"
+msgstr "Czas trwania (tekst)"
+
+msgid "Duration:"
+msgstr "Czas trwania:"
+
+msgid "Edit service"
+msgstr "Edytuj usługę"
+
+msgid "Edit service category"
+msgstr "Edytuj kategorię usługi"
+
+msgid "Export CSV"
+msgstr "Eksport CSV"
+
+msgid "Export services"
+msgstr "Eksport usług"
+
+msgid "Leave empty for all published services. An unknown slug shows an empty menu."
+msgstr "Pozostaw puste, aby pokazać wszystkie opublikowane usługi. Nieznany identyfikator pokaże pustą listę."
+
+msgid "Menu settings"
+msgstr "Ustawienia listy"
+
+msgid "More than 100 services are published. Each embedded menu shows its first 100 matches; use categories or drafts to keep a complete menu."
+msgstr "Opublikowano ponad 100 usług. Każda osadzona lista pokazuje pierwsze 100 pasujących usług; użyj kategorii lub szkiców, aby lista była kompletna."
+
+msgid "New service"
+msgstr "Nowa usługa"
+
+msgid "No published services in this menu."
+msgstr "Brak opublikowanych usług na tej liście."
+
+msgid "No services found in Trash."
+msgstr "Nie znaleziono usług w koszu."
+
+msgid "No services found."
+msgstr "Nie znaleziono usług."
+
+msgid "Order"
+msgstr "Kolejność"
+
+msgid "Order must be a whole number from 0 to 9999. The previous order was kept."
+msgstr "Kolejność musi być liczbą całkowitą od 0 do 9999. Zachowano poprzednią wartość."
+
+msgid "Price (text)"
+msgstr "Cena (tekst)"
+
+msgid "Price:"
+msgstr "Cena:"
+
+msgid "Reusable service catalog with categories, text prices, and a simple public menu."
+msgstr "Katalog usług wielokrotnego użytku z kategoriami, cenami tekstowymi i prostą listą publiczną."
+
+msgid "Search service categories"
+msgstr "Szukaj kategorii usług"
+
+msgid "Search services"
+msgstr "Szukaj usług"
+
+msgid "Service"
+msgstr "Usługa"
+
+msgid "Service Menu"
+msgstr "Lista usług"
+
+msgid "Service archived as a draft."
+msgstr "Usługę zarchiwizowano jako szkic."
+
+msgid "Service categories"
+msgstr "Kategorie usług"
+
+msgid "Service category"
+msgstr "Kategoria usługi"
+
+msgid "Service details"
+msgstr "Szczegóły usługi"
+
+msgid "Services"
+msgstr "Usługi"
+
+msgid "Showing the first 100 services. More published services are available."
+msgstr "Wyświetlono pierwsze 100 usług. Dostępne są kolejne opublikowane usługi."
+
+msgid "The published menu appears on the page. Drafts remain private."
+msgstr "Opublikowana lista pojawi się na stronie. Szkice pozostają prywatne."
+
+msgid "Use the Excerpt box for a plain-text description, Categories for grouping, and the native Order field for a number from 0 to 9999. Price is your own wording; no currency, tax or checkout is calculated."
+msgstr "Użyj pola Zajawka do opisu zwykłym tekstem, kategorii do grupowania i pola Kolejność do wpisania liczby od 0 do 9999. Cena jest Twoim tekstem; wtyczka nie oblicza waluty, podatku ani płatności."
+
+msgid "View services"
+msgstr "Zobacz usługi"
+
+msgid "You cannot archive this service."
+msgstr "Nie możesz zarchiwizować tej usługi."
+
+msgid "You cannot export services."
+msgstr "Nie możesz eksportować usług."

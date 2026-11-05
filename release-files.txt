@@ -1,0 +1,11 @@
+# Runtime files and user documentation only.
+digicyfr-service-menu.php
+includes
+blocks
+assets
+languages/digicyfr-service-menu-pl_PL.mo
+languages/digicyfr-service-menu-pl_PL.po
+readme.txt
+README.md
+CHANGELOG.md
+LICENSE

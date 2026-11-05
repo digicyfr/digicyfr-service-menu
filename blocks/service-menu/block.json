@@ -1,0 +1,15 @@
+{
+  "apiVersion": 3,
+  "name": "digicyfr/service-menu",
+  "title": "Service Menu",
+  "category": "widgets",
+  "icon": "list-view",
+  "description": "Display published services, optionally filtered by a category slug.",
+  "textdomain": "digicyfr-service-menu",
+  "attributes": {
+    "category": { "type": "string", "default": "" }
+  },
+  "editorScript": "digicyfr-service-menu-editor",
+  "style": "digicyfr-service-menu-style",
+  "supports": { "html": false }
+}
