@@ -8,10 +8,10 @@ Reusable service catalog, categories, plain-text duration and price fields, publ
 
 ## Verification and compatibility
 
-WordPress 7.1 and PHP 8.3.33. The exact ZIP passed install/activate/deactivate/reactivate, WordPress integration, browser keyboard and 390px checks, PHP/JS syntax, WPCS, and Plugin Check with only self-host distribution findings.
+WordPress 7.1 and PHP 8.3.33. The exact ZIP passed install/activate/deactivate/reactivate, WordPress integration, interactive block insertion and category filtering in Chromium, browser keyboard and 390px checks, PHP/JS syntax, WPCS, and Plugin Check with only self-host distribution findings. The interactive block check was completed after the `v0.1.0` tag without changing the ZIP.
 
 ## Limits and follow-up checks
 
-Interactive block insertion, a manual screen-reader pass, and multisite/network behavior remain untested. The Unicode title sort order follows the site database collation. No payment, booking or legal price-compliance feature is offered.
+A manual screen-reader pass and multisite/network behavior remain untested. The Unicode title sort order follows the site database collation. No payment, booking or legal price-compliance feature is offered.
 
 The `Update URI` protects this self-hosted plugin from an unrelated WordPress.org plugin with the same slug. It does not provide automatic updates. WordPress.org submission would need a separate review and distribution-specific changes. See [QA record](tests/QA-0.1.0.md) for the detailed local evidence.

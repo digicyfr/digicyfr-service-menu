@@ -1,6 +1,6 @@
 # Service Menu 0.1.0 local QA record
 
-Date: 2026-11-05. This is a local self-hosted release candidate, not a public release. The ZIP was rebuilt after README changes; runtime bytes are unchanged.
+Date: 2026-11-05. The exact ZIP is published as a GitHub prerelease for self-hosted installation; stable promotion remains gated. The ZIP was rebuilt after README changes; runtime bytes are unchanged.
 
 ## Exact artifact
 
@@ -24,6 +24,16 @@ Date: 2026-11-05. This is a local self-hosted release candidate, not a public re
 - Archive confirmation was reached with keyboard Enter, changed the service to Draft, and removed it from the public menu. CSV export downloaded and included the draft row.
 - An independent disposable Chromium run also traversed the native editor, archive confirmation, draft list and CSV download. On a 390px editor viewport, document width was 390px and the price field's right edge was 365px. Disposable sites and volumes were removed after checks.
 
+## Post-tag browser check on the exact GitHub ZIP
+
+On 2026-11-05, the public `v0.1.0` ZIP and checksum were downloaded from GitHub; `sha256sum --check` matched `ff091f45141b650b1cbe6d4d6c9d3bc760d21280c5783fa4f97266560592308d`. The downloaded ZIP installed, activated, deactivated and reactivated on a fresh disposable WordPress 7.1/PHP 8.3.33 site. Chromium 156.0.8078.4 then exercised the real block editor:
+
+- Searched the block inserter for **Service Menu**, clicked its result, and confirmed one `digicyfr/service-menu` block appeared with its editor placeholder and sidebar controls. [Inserted block screenshot](evidence/0.1.0/block-inserted.png).
+- Entered the optional category slug `konsultacje` in the block sidebar, published a page, and confirmed its saved markup was `<!-- wp:digicyfr/service-menu {"category":"konsultacje"} /-->`. [Category inspector screenshot](evidence/0.1.0/category-inspector.png).
+- Viewed the saved page at a 390px viewport. A published Polish service in that category and its price text appeared, the response was HTTP 200, document width was 390px, and Chromium reported no page errors. [Public render screenshot](evidence/0.1.0/public-390px.png).
+
+The site, service and screenshots contain synthetic test data only. The disposable containers and volumes were removed after the check. This closes the interactive block insertion gate for the exact GitHub ZIP.
+
 ## Plugin Check
 
 WordPress.org Plugin Check ran against the runtime-identical earlier ZIP. Its only findings were `plugin_updater_detected` (error: the unique Update URI is disallowed for WordPress.org-hosted plugins) and `load_plugin_textdomainFound` (warning: WordPress.org-hosted plugins do not need bundled translation loading). This candidate is for Digicyfr self-hosted distribution, where those choices are intentional. WordPress.org submission would need a separate channel-specific review.
@@ -33,5 +43,5 @@ WordPress.org Plugin Check ran against the runtime-identical earlier ZIP. Its on
 On 2026-11-05, the rebuilt ZIP and SHA-256 sidecar matched the standalone and workspace packagers. This exact rebuilt ZIP passed install/activate/deactivate/reactivate and the complete WordPress integration fixture on WordPress 7.1/PHP 8.3.33. Earlier browser and Plugin Check evidence is from a byte-different ZIP with identical runtime files.
 
 - The integration fixture invokes real WordPress APIs but does not simulate a forged HTTP nonce. The archive and CSV browser flows exercised the normal admin endpoints; contributor access was checked at the object/action and export-page capability paths.
-- The editor's interactive block inserter was not tested; server block registration and front-end render passed. Screen-reader testing and multisite network testing remain open. Compatibility outside WordPress 7.1/PHP 8.3.33 was not tested.
+- Interactive block insertion and filtered public rendering passed on the exact GitHub ZIP as recorded above. Human screen-reader testing and multisite network testing remain open. Compatibility outside WordPress 7.1/PHP 8.3.33 was not tested.
 - At equal order, the bounded SQL query uses `LOWER(post_title)` compared bytewise and ID as tie-breaker. Case conversion follows the database character set; unusual Unicode ordering should be checked on a site's own database. No custom tables or upgrade migration are present in 0.1.0.
