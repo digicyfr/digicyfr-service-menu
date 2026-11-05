@@ -3,7 +3,7 @@ Tags: services, business, price list, categories, shortcode
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.3
-Stable tag: 0.1.0
+Stable tag: 0.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
@@ -36,6 +36,10 @@ After confirmation, it changes a published service to Draft. Publish restores it
 Service posts, terms and meta are retained to prevent accidental loss. Reactivate the plugin to edit them again.
 
 == Changelog ==
+
+= 0.1.1 =
+
+* Added the required Contributors header and refreshed Tested up to for WordPress 7.1.4 compatibility. No functional change.
 
 = 0.1.0 =
 
