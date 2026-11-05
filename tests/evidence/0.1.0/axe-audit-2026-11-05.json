@@ -1,0 +1,393 @@
+{
+  "date": "2026-11-05",
+  "zipSha256": "ff091f45141b650b1cbe6d4d6c9d3bc760d21280c5783fa4f97266560592308d",
+  "stack": "WordPress 7.1, PHP 8.3.33, MariaDB 11.4.13, Chromium 156",
+  "baselineNote": "Core post editor forced to Classic Editor with a disposable MU filter so its native Categories taxonomy tabs match the service editor taxonomy UI.",
+  "scans": {
+    "publicCore": {
+      "violations": [
+        {
+          "id": "list",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [
+                ".is-responsive.items-justified-right.wp-block-navigation__container"
+              ],
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: ul"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              "#comment"
+            ]
+          ]
+        }
+      ],
+      "passes": 26
+    },
+    "publicPlugin": {
+      "violations": [
+        {
+          "id": "list",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [
+                ".is-responsive.items-justified-right.wp-block-navigation__container"
+              ],
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: ul"
+            }
+          ]
+        }
+      ],
+      "incomplete": [],
+      "passes": 23
+    },
+    "publicComponent": {
+      "violations": [],
+      "incomplete": [],
+      "passes": 6
+    },
+    "adminCore": {
+      "violations": [
+        {
+          "id": "aria-required-children",
+          "impact": "critical",
+          "nodes": [
+            {
+              "target": [
+                "#category-tabs"
+              ],
+              "summary": "Fix any of the following:\n  Element has children which are not allowed: li[tabindex]"
+            }
+          ]
+        },
+        {
+          "id": "aria-required-parent",
+          "impact": "critical",
+          "nodes": [
+            {
+              "target": [
+                "a[href$=\"#category-all\"]"
+              ],
+              "summary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            },
+            {
+              "target": [
+                "a[href$=\"#category-pop\"]"
+              ],
+              "summary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            }
+          ]
+        },
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": [
+            {
+              "target": [
+                "#mceu_1-button"
+              ],
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's role is not presentational because it is focusable"
+            },
+            {
+              "target": [
+                "#mceu_2-button"
+              ],
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's role is not presentational because it is focusable"
+            },
+            {
+              "target": [
+                "#mceu_3-button"
+              ],
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's role is not presentational because it is focusable"
+            },
+            {
+              "target": [
+                "#mceu_4-button"
+              ],
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's role is not presentational because it is focusable"
+            },
+            {
+              "target": [
+                "#mceu_5-button"
+              ],
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's role is not presentational because it is focusable"
+            },
+            {
+              "target": [
+                "#mceu_6-button"
+              ],
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's role is not presentational because it is focusable"
+            },
+            {
+              "target": [
+                "#mceu_7-button"
+              ],
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's role is not presentational because it is focusable"
+            },
+            {
+              "target": [
+                "#mceu_8-button"
+              ],
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's role is not presentational because it is focusable"
+            },
+            {
+              "target": [
+                "#mceu_9-button"
+              ],
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's role is not presentational because it is focusable"
+            },
+            {
+              "target": [
+                "#mceu_10-button"
+              ],
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's role is not presentational because it is focusable"
+            },
+            {
+              "target": [
+                "#mceu_11-button"
+              ],
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's role is not presentational because it is focusable"
+            },
+            {
+              "target": [
+                "#mceu_12-button"
+              ],
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's role is not presentational because it is focusable"
+            }
+          ]
+        },
+        {
+          "id": "listitem",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [
+                ".tabs"
+              ],
+              "summary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+            },
+            {
+              "target": [
+                "#category-tabs > .hide-if-no-js"
+              ],
+              "summary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+            }
+          ]
+        },
+        {
+          "id": "nested-interactive",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [
+                "#mceu_0"
+              ],
+              "summary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+            },
+            {
+              "target": [
+                "#mceu_1"
+              ],
+              "summary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+            },
+            {
+              "target": [
+                "#mceu_2"
+              ],
+              "summary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+            },
+            {
+              "target": [
+                "#mceu_3"
+              ],
+              "summary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+            },
+            {
+              "target": [
+                "#mceu_4"
+              ],
+              "summary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+            },
+            {
+              "target": [
+                "#mceu_5"
+              ],
+              "summary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+            },
+            {
+              "target": [
+                "#mceu_6"
+              ],
+              "summary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+            },
+            {
+              "target": [
+                "#mceu_7"
+              ],
+              "summary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+            },
+            {
+              "target": [
+                "#mceu_8"
+              ],
+              "summary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+            },
+            {
+              "target": [
+                "#mceu_9"
+              ],
+              "summary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+            },
+            {
+              "target": [
+                "#mceu_10"
+              ],
+              "summary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+            },
+            {
+              "target": [
+                "#mceu_11"
+              ],
+              "summary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+            },
+            {
+              "target": [
+                "#mceu_12"
+              ],
+              "summary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-required-children",
+          "nodes": [
+            [
+              ".tagchecklist"
+            ]
+          ]
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "nodes": [
+            [
+              "#insert-media-button"
+            ],
+            [
+              "#set-post-thumbnail"
+            ]
+          ]
+        }
+      ],
+      "passes": 35
+    },
+    "adminPlugin": {
+      "violations": [
+        {
+          "id": "aria-required-children",
+          "impact": "critical",
+          "nodes": [
+            {
+              "target": [
+                "#digicyfr_service_cat-tabs"
+              ],
+              "summary": "Fix any of the following:\n  Element has children which are not allowed: li[tabindex]"
+            }
+          ]
+        },
+        {
+          "id": "aria-required-parent",
+          "impact": "critical",
+          "nodes": [
+            {
+              "target": [
+                "a[href$=\"#digicyfr_service_cat-all\"]"
+              ],
+              "summary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            },
+            {
+              "target": [
+                "a[href$=\"#digicyfr_service_cat-pop\"]"
+              ],
+              "summary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            }
+          ]
+        },
+        {
+          "id": "listitem",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [
+                ".tabs"
+              ],
+              "summary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+            },
+            {
+              "target": [
+                "#digicyfr_service_cat-tabs > .hide-if-no-js"
+              ],
+              "summary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              "#excerpt"
+            ],
+            [
+              "#post_author_override"
+            ]
+          ]
+        }
+      ],
+      "passes": 32
+    },
+    "adminMeta": {
+      "violations": [],
+      "incomplete": [],
+      "passes": 16
+    },
+    "exportPage": {
+      "violations": [],
+      "incomplete": [],
+      "passes": 4
+    },
+    "archivePage": {
+      "violations": [],
+      "incomplete": [],
+      "passes": 5
+    }
+  },
+  "keyboard": {
+    "durationTabTo": "digicyfr-service-price"
+  },
+  "widths": {
+    "public": {
+      "document": 390,
+      "viewport": 390
+    },
+    "admin": {
+      "document": 390,
+      "viewport": 390
+    }
+  },
+  "axNamesPresent": [
+    "Synthetic consultation",
+    "Synthetic service description"
+  ],
+  "pageErrors": []
+}

@@ -34,6 +34,15 @@ On 2026-11-05, the public `v0.1.0` ZIP and checksum were downloaded from GitHub;
 
 The site, service and screenshots contain synthetic test data only. The disposable containers and volumes were removed after the check. This closes the interactive block insertion gate for the exact GitHub ZIP.
 
+## Exact-ZIP automated accessibility check (2026-11-05)
+
+The public GitHub ZIP and SHA-256 sidecar were downloaded again and verified; `scripts/release.py --verify` matched the 11 packaged source files and hash `ff091f45141b650b1cbe6d4d6c9d3bc760d21280c5783fa4f97266560592308d`. A fresh disposable WordPress 7.1/PHP 8.3.33 site with one synthetic service and one synthetic published block page was checked in Playwright Chromium with axe-core 4.10.3 (WCAG 2 A/AA, 2.1 AA and 2.2 AA rules). The [machine-readable report](evidence/0.1.0/axe-audit-2026-11-05.json) records all nodes and comparisons.
+
+- The plugin's public service list, custom service details meta box, export page and archive confirmation had **zero axe violations** and zero incomplete checks. The full public page had the Twenty Twenty-Five navigation `list` violation also present on a WordPress core post without the service block.
+- The full service editor had `aria-required-children`, `aria-required-parent` and `listitem` findings in WordPress's generated hierarchical taxonomy tabs. For a like-for-like baseline, a disposable test-only MU filter opened a core post in Classic Editor. Its native Categories tabs had the same three rule IDs and analogous `#category-tabs` targets; the plugin targets were `#digicyfr_service_cat-tabs`. These are WordPress core taxonomy meta-box markup findings, not custom service field markup. The core Classic Editor had additional findings outside the plugin's UI. The plugin editor also had two axe-incomplete contrast nodes, which require manual follow-up.
+- Tab from Duration reached Price; both custom fields had associated labels. The browser accessibility tree exposed the synthetic service name and description. Public page and service editor document widths were 390px at a 390px viewport, with no page JavaScript errors.
+- Automated axe does not replace a human NVDA/VoiceOver check. The disposable containers and volumes were removed, and the release ZIP, branch and tag were unchanged.
+
 ## Plugin Check
 
 WordPress.org Plugin Check ran against the runtime-identical earlier ZIP. Its only findings were `plugin_updater_detected` (error: the unique Update URI is disallowed for WordPress.org-hosted plugins) and `load_plugin_textdomainFound` (warning: WordPress.org-hosted plugins do not need bundled translation loading). This candidate is for Digicyfr self-hosted distribution, where those choices are intentional. WordPress.org submission would need a separate channel-specific review.
