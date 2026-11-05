@@ -1,0 +1,19 @@
+{
+    "name": "digicyfr/digicyfr-service-menu",
+    "description": "Coding-standard tooling for the Digicyfr Service Menu plugin. Not shipped in the plugin ZIP.",
+    "license": "GPL-2.0-or-later",
+    "type": "project",
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3.1",
+        "phpcompatibility/phpcompatibility-wp": "^2.1",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "lint": "phpcs"
+    }
+}

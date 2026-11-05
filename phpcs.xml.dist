@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ruleset name="Digicyfr Service Menu">
+	<description>WordPress Coding Standards for the Digicyfr Service Menu plugin.</description>
+
+	<file>.</file>
+	<exclude-pattern>/dist/*</exclude-pattern>
+	<exclude-pattern>/vendor/*</exclude-pattern>
+	<exclude-pattern>/languages/*</exclude-pattern>
+	<exclude-pattern>/scripts/*</exclude-pattern>
+
+	<arg name="extensions" value="php"/>
+	<arg value="sp"/>
+
+	<rule ref="WordPress-Extra"/>
+	<rule ref="WordPress-Docs"/>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="digicyfr-service-menu"/>
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="PHPCompatibilityWP"/>
+	<config name="testVersion" value="8.3-"/>
+</ruleset>

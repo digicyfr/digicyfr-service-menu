@@ -16,12 +16,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install PHP CLI
-        run: sudo apt-get update && sudo apt-get install -y php8.3-cli
+        run: sudo apt-get update && sudo apt-get install -y php8.3-cli php8.3-xml php8.3-mbstring php8.3-zip
       - name: Lint PHP and JavaScript
         run: |
           set -euo pipefail
           find . -type f -name '*.php' -not -path './dist/*' -print0 | xargs -0 -n1 php -l
           find . -type f -name '*.js' -not -path './dist/*' -print0 | xargs -0 -r -n1 node --check
+      - name: Install PHPCS and WordPress Coding Standards
+        run: composer install --no-interaction --no-progress
+      - name: PHPCS (WordPress Coding Standards)
+        run: vendor/bin/phpcs
       - name: Build and verify release ZIP
         run: |
           set -euo pipefail
