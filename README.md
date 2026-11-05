@@ -2,6 +2,18 @@
 
 A free, GPL-licensed WordPress plugin for a reusable list of services at a small business. Editors maintain a service once, assign one or more categories, set a native Order number, and embed published services with the **Service Menu** block or `[digicyfr_service_menu]` shortcode. English and Polish strings are bundled.
 
+**Po polsku:** Dla firm usługowych: prowadź jedną listę usług w WordPress i pokazuj ją na stronach blokiem lub shortcode. Wtyczka prezentuje ofertę; nie obsługuje rezerwacji ani płatności.
+
+## Website guides and stable release
+
+- [Service Menu: English overview and installation](https://www.digicyfr.com/en/wordpress-plugins/digicyfr-service-menu)
+- [Lista usług: opis i instalacja po polsku](https://www.digicyfr.com/pl/wordpress-plugins/digicyfr-service-menu)
+- [Stable v0.1.0 release, ZIP and checksum](https://github.com/digicyfr/digicyfr-service-menu/releases/tag/v0.1.0)
+
+<a href="https://www.digicyfr.com/pl/wordpress-plugins/digicyfr-service-menu"><img src="https://www.digicyfr.com/images/wordpress-plugins/digicyfr-service-menu.png" alt="Mobile service menu with example services" width="260"></a>
+
+_Example screenshot from a disposable test site._
+
 ## Install and use
 
 1. Upload the release ZIP under **Plugins → Add New → Upload Plugin** and activate it. Requires WordPress 7.1+ and PHP 8.3+.
