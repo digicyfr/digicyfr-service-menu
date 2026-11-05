@@ -1,6 +1,10 @@
-# Service Menu 0.1.0 local QA record
+# Service Menu 0.1.0 QA record
 
-Date: 2026-11-05. The exact ZIP is published as a GitHub prerelease for self-hosted installation; stable promotion remains gated. The ZIP was rebuilt after README changes; runtime bytes are unchanged.
+Date: 2026-11-05. Version 0.1.0 is a stable self-hosted GitHub release. The ZIP was rebuilt after README changes; runtime bytes are unchanged.
+
+## Release decision (2026-11-05)
+
+The published ZIP passed exact-artifact installation, integration, normal browser editor/public-block flows, keyboard and 390px checks, and plugin-owned axe-core scans. Digicyfr accepted browser automation for this release decision. Human screen-reader, inconclusive editor contrast, representative business-site and multisite checks remain untested; no WCAG conformance claim is made. The WordPress-generated taxonomy-tab findings are documented against a core Classic Editor baseline below. The stable label does not change the tagged source, protected release branch or ZIP bytes.
 
 ## Exact artifact
 
@@ -45,7 +49,7 @@ The public GitHub ZIP and SHA-256 sidecar were downloaded again and verified; `s
 
 ## Plugin Check
 
-WordPress.org Plugin Check ran against the runtime-identical earlier ZIP. Its only findings were `plugin_updater_detected` (error: the unique Update URI is disallowed for WordPress.org-hosted plugins) and `load_plugin_textdomainFound` (warning: WordPress.org-hosted plugins do not need bundled translation loading). This candidate is for Digicyfr self-hosted distribution, where those choices are intentional. WordPress.org submission would need a separate channel-specific review.
+WordPress.org Plugin Check ran against the runtime-identical earlier ZIP. Its only findings were `plugin_updater_detected` (error: the unique Update URI is disallowed for WordPress.org-hosted plugins) and `load_plugin_textdomainFound` (warning: WordPress.org-hosted plugins do not need bundled translation loading). This ZIP is for Digicyfr self-hosted distribution, where those choices are intentional. WordPress.org submission would need a separate channel-specific review.
 
 ## Current artifact recheck and remaining checks
 
