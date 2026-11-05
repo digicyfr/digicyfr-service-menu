@@ -1,7 +1,8 @@
 === Digicyfr Service Menu ===
+Contributors: digicyfr, alkesh7
 Tags: services, business, price list, categories, shortcode
 Requires at least: 7.1
-Tested up to: 7.1
+Tested up to: 7.1.4
 Requires PHP: 8.3
 Stable tag: 0.1.0
 License: GPLv2 or later
