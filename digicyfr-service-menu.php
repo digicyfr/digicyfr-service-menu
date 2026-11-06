@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Digicyfr Service Menu
  * Description: Reusable service catalog with categories, text prices, and a simple public menu.
- * Version: 0.1.0
+ * Version: 0.1.1
  * Requires at least: 7.1
  * Requires PHP: 8.3
  * Author: Digicyfr
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'DIGICYFR_SERVICE_MENU_VERSION', '0.1.0' );
+define( 'DIGICYFR_SERVICE_MENU_VERSION', '0.1.1' );
 define( 'DIGICYFR_SERVICE_MENU_PATH', plugin_dir_path( __FILE__ ) );
 define( 'DIGICYFR_SERVICE_MENU_URL', plugin_dir_url( __FILE__ ) );
 
